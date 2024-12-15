@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Online Voting System</title>
+</head>
+
+<body>
+    <div id="headerSection">
+        <h1>Online Voting System</h1>
+    </div>
+    <hr>
+    
+    <div id="bodySection1">
+    <h3>Registration</h3>
+    <form action="../api/resister.php" method="POST" enctype="multipart/form-data" id="myForm">
+        <input type="text" name="name" id="name" placeholder="Name"><br>
+        <input type="number" name="mobile"id="mobile" placeholder="Number"><br>
+        <input type="password" name="password"id="password" placeholder="password "><br>
+        <input type="password" name="cpassword"id="cpassword" placeholder="Confirm Password "><br>
+        <input type="text" name="address"id="address" placeholder="Address">
+        <p>Upload image: <input type="file"id="photo" name="photo"></p>
+        <p>Select Role:
+        <select name="role" id="dropbox">
+            <option value="1">voter</option>
+            <option value="2">group</option>
+        </select>
+        
+        <button type="submit">Sign up</button><br>
+    </p>
+        <p>Already have an account? <a href="../index.html">Login here</a> </p>
+    </form>
+
+    <script>
+        document.getElementById('myForm').addEventListener('submit', function(event) {
+            let isValid = true; 
+            const nameField = document.getElementById('name');
+            if (!nameField.value.trim()) {
+                isValid = false;
+                alert('Please fill in the Name field.');
+            }
+            const mobileField = document.getElementById('mobile');
+            if (!mobileField.value.trim()) {
+                isValid = false;
+                alert('Please fill in the Mobile field.');
+            }
+            const passwordField = document.getElementById('password');
+            if (!passwordField.value.trim()) {
+                isValid = false;
+                alert('Please fill in the Password field.');
+            }
+            const addressField = document.getElementById('address');
+            if (!addressField.value.trim()) {
+                isValid = false;
+                alert('Please fill in the Address field.');
+            }
+            const photoField = document.getElementById('photo');
+            if (!photoField.files.length) {
+                isValid = false;
+                alert('Please upload an image.');
+            }
+            if (!isValid) {
+                event.preventDefault();
+            }
+        });
+    </script>
+    
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+body
+{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(11, 216, 216, 0.281);
+    font-size: 20px;
+    display: grid;
+    place-items: center;
+}
+hr
+{
+    width: 100%;
+}
+#headerSection
+{
+    padding: 15px;
+}
+#bodySection
+{
+    border-radius: 10px;
+    width: 450px;
+    height: 350px;
+    margin:  100px;
+    background-color: rgb(154, 236, 181);
+    box-shadow: 4px 4px  8px rgb(46, 173, 161);
+}
+#bodySection1
+{
+    border-radius: 10px;
+    width: 550px;
+    height:640px;
+    margin:  10px;
+    background-color: rgb(154, 236, 181);
+    box-shadow: 4px 4px  8px rgb(46, 173, 161);
+}
+input
+{
+    border-radius: 50px;
+    border-color: transparent;
+    width: 270px;
+    padding: 10px 40px;
+    margin:  10px;
+    font-size: 20px;
+    text-align: start;
+    box-shadow: 4px 4px  8px turquoise;
+}
+#dropbox
+{
+    border-radius: 50px;
+    border-color: transparent;
+    width: 160px;
+    padding: 0px;
+    height: 50px;
+    margin:  10px;
+    font-size: 20px;
+    text-align: center;
+    box-shadow: 4px 4px  8px turquoise;
+}
+button
+{
+    border-radius: 50px;
+    border-color: transparent;
+    width: 160px;
+    height: 50px;
+    margin:  10px;
+    font-size: 20px;
+    text-align: center;
+    background-color: #15dfac;
+    box-shadow: 4px 4px  8px turquoise;
+}
+.userdetils
+{
+    border-radius: 20px;
+    border-color: transparent;
+    width: 30%;
+    padding:  20px 40px;
+    margin: 50px;
+    font-size: 20px;
+    text-align: start;
+    background-color: #15dfac;
+    box-shadow: 4px 4px  8px turquoise;
+}
+.userPhoto
+{
+    
+   padding-left: 50px;
+}
+p
+{
+    margin: 20px;
+}
+.startEnd
+{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.left
+{
+   float: left;
+}
+.right
+{
+    float: right;
+}
+#mainSection
+{
+    width: 100%;
+}
